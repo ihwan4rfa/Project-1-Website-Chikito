@@ -1,8 +1,6 @@
-# Project-1-Website-Chikito
-Website Chikito - Mini Project Front End
+# Website Chikito - Mini Project Front End
 
-# Requirement minimal yang harus dipenuhi dalam assignment ini adalah sebagai berikut:
-
+Requirement minimal yang harus dipenuhi dalam assignment ini adalah sebagai berikut:
 1. Implementasi HTML
 2. Penggunaan Responsive Layout
 3. Penggunaan Tailwind Elements: 
