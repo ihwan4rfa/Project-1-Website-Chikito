@@ -12,62 +12,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <!-- ICONS -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://kit.fontawesome.com/a62f3ccc35.js" crossorigin="anonymous"></script>
     <title>Chikito</title>
 </head>
 
 <body class="bg-background">
 
     <!-- Navbar Section Start -->
-    <header class="bg-white font-[Lato] font-semibold text-base fixed w-full z-20">
-        <nav class="flex justify-between items-center py-3 px-5 md:px-7 lg:px-20">
+    <header class="bg-white font-[Lato] font-semibold text-base fixed w-full z-20 shadow-sm">
+        <nav class="flex items-center justify-between px-5 py-3 md:px-7 lg:px-20">
             <div class="cursor-pointer">
-                <img class="h-9 inline" src="img/Logo Chikito 1.png" alt="logo">
+                <img class="inline h-9" src="img/Logo Chikito 1.png" alt="logo">
             </div>
+            <!-- Navbar Desktop Start -->
             <div class="static hidden md:inline">
                 <ul class="flex items-center gap-7 text-dark">
                     <li>
-                        <a class="hover:text-primary tracking-tight" href="#">Home</a>
+                        <a class="tracking-tight hover:text-primary" href="#">Home</a>
                     </li>
                     <li>
-                        <a class="hover:text-primary tracking-tight" href="#">About us</a>
+                        <a class="tracking-tight hover:text-primary" href="#">About us</a>
                     </li>
                     <li>
-                        <a class="hover:text-primary tracking-tight" href="#">Locations</a>
+                        <a class="tracking-tight hover:text-primary" href="#">Locations</a>
                     </li>
                     <li>
-                        <a class="hover:text-primary tracking-tight" href="#">Menu</a>
+                        <a class="tracking-tight hover:text-primary" href="#">Menu</a>
                     </li>
                     <li>
-                        <a class="hover:text-primary tracking-tight" href="#">Reviews</a>
+                        <a class="tracking-tight hover:text-primary" href="#">Reviews</a>
                     </li>
-                    <button class="hidden md:inline px-5 py-2 rounded-full bg-primary text-white">Contact us</button>
+                    <button class="hidden px-5 py-2 text-white rounded-full md:inline bg-primary">Contact us</button>
                 </ul>
             </div>
+            <!-- Navbar Desktop End -->
             <div class="flex items-center gap-5 md:hidden">
-                <button class="px-5 py-2 rounded-full bg-primary text-white">Contact us</button>
+                <button class="px-5 py-2 text-white rounded-full bg-primary">Contact us</button>
                 <ion-icon onclick="menu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
             </div>
         </nav>
     </header>
-
     <!-- Navbar Mobile Start -->
     <div
         class="nav-links fixed z-10 md:static md:min-h-fit bg-white min-h-[35vh] left-0 top-[-400px] transition-all ease-in-out duration-500 w-full flex items-center px-8 md:py-0 py-7">
         <ul class="flex flex-col md:flex-row gap-6 md:mt-0 mt-16 text-dark font-[Lato] font-semibold text-base">
             <li>
-                <a class="hover:text-primary tracking-tight" href="#">Home</a>
+                <a class="tracking-tight hover:text-primary" href="#">Home</a>
             </li>
             <li>
-                <a class="hover:text-primary tracking-tight" href="#">About us</a>
+                <a class="tracking-tight hover:text-primary" href="#">About us</a>
             </li>
             <li>
-                <a class="hover:text-primary tracking-tight" href="#">Locations</a>
+                <a class="tracking-tight hover:text-primary" href="#">Locations</a>
             </li>
             <li>
-                <a class="hover:text-primary tracking-tight" href="#">Menu</a>
+                <a class="tracking-tight hover:text-primary" href="#">Menu</a>
             </li>
             <li>
-                <a class="hover:text-primary tracking-tight" href="#">Reviews</a>
+                <a class="tracking-tight hover:text-primary" href="#">Reviews</a>
             </li>
         </ul>
     </div>
@@ -75,9 +77,17 @@
     <!-- Navbar Section End -->
 
     <!-- Home Section Start -->
-    <section id="home" class="pt-28 md:pt-20 z-0">
+    <section id="home" class="z-0 pt-28 md:pt-20">
         <div class="flex flex-wrap px-5 md:px-3 lg:px-14">
-            <div class="w-full self-center px-8 md:px-8 md:w-1/2 mb-5">
+            <div class="self-center w-full px-8 mb-5 md:px-8 md:w-1/2">
+                <!-- Social Media Start -->
+                <div class="flex items-center py-2 h-14 text-dark">
+                    <a href="#" class="h-6 px-2 fa-brands fa-instagram hover:text-primary"></a>
+                    <a href="#" class="h-6 px-2 fa-brands fa-facebook-f hover:text-primary"></a>
+                    <a href="#" class="h-6 px-2 fa-brands fa-twitter hover:text-primary"></a>
+                    <a href="#" class="h-6 px-2 fa-brands fa-tiktok hover:text-primary"></a>
+                </div>
+                <!-- Social Media End -->
                 <h1
                     class="font-[Oswald] font-bold mb-6 text-dark text-6xl md:text-5xl lg:text-6xl tracking-wide text-center md:text-left">
                     CHICKEN BAR <span><br>AND<span class="text-primary"> STEAK</span></span></h1>
@@ -89,17 +99,17 @@
                 <div
                     class="flex-col xs:flex xs:flex-row font-[Lato] text-lg md:text-xs lg:text-base font-semibold grid justify-items-stretch xs:justify-center md:justify-normal xs:w-auto">
                     <a href="#"
-                        class="flex items-center text-white bg-primary py-3 px-6 md:px-5 lg:px-6 rounded-full justify-self-center w-fit">Place
+                        class="flex items-center px-6 py-3 text-white rounded-full bg-primary md:px-5 lg:px-6 justify-self-center w-fit">Place
                         an order<ion-icon name="arrow-forward-outline" class="ml-2"></ion-icon></a>
                     <a href="#"
-                        class="flex items-center justify-self-center italic text-dark ml-0 xs:ml-6 hover:text-primary mt-6 xs:mt-0"><ion-icon
+                        class="flex items-center mt-6 ml-0 italic justify-self-center text-dark xs:ml-6 hover:text-primary xs:mt-0"><ion-icon
                             name="play-sharp"
-                            class="bg-white p-4 md:p-3 lg:p-4 rounded-full text-primary mr-2 text-xl md:text-sm"></ion-icon>Check
+                            class="p-4 mr-2 text-xl bg-white rounded-full md:p-3 lg:p-4 text-primary md:text-sm"></ion-icon>Check
                         our video</a>
                 </div>
             </div>
-            <div class="w-full self-end md:w-1/2">
-                <div class="mt-5 lg:mt-8 px-8 md:px-5">
+            <div class="self-end w-full md:w-1/2">
+                <div class="px-8 mt-5 lg:mt-8 md:px-5">
                     <img src="img/menu 1.png" alt="menu1" class="max-w-full mx-auto">
                 </div>
             </div>
@@ -108,32 +118,36 @@
     <!-- Home Section End -->
 
     <!-- Promo Section Start -->
-    <section id="home" class="pt-16 z-0">
+    <section id="home" class="z-0 pt-16">
         <div class="flex flex-wrap px-5 md:px-3 lg:px-14">
-            <div class="w-full self-end md:w-1/2 mb-5">
-                <div class="mt-5 lg:mt-8 px-8 md:px-5">
+            <div class="self-end w-full mb-5 md:w-1/2">
+                <div class="px-8 mt-5 lg:mt-8 md:px-5">
                     <img src="img/menu 2.png" alt="menu1" class="max-w-full mx-auto">
                 </div>
             </div>
-            <div class="w-full self-center px-8 md:px-8 md:w-1/2">
+            <div class="self-center w-full px-8 md:px-8 md:w-1/2">
                 <h1
                     class="font-[Oswald] font-bold mb-6 text-dark text-6xl md:text-5xl lg:text-6xl tracking-wide text-center md:text-left">
                     TODAY'S PROMO</span></span></h1>
+                <h2
+                    class="font-[Lato] font-medium italic mb-6 text-primary text-3xl md:text-2xl lg:text-3xl tracking-tight text-center md:text-left">
+                    10% Discount on Chikito Onion</span></span></h2>
+                <p
+                    class="font-[Lato] font-medium text-xl md:text-base lg:text-xl text-grey mb-3 md:mr-10 leading-normal tracking-tight text-center md:text-left">
+                    Nikmati promo spesial hari ini dengan diskon 10% untuk menu Chikito Onion! Terdiri dari boneless
+                    chicken crispy, potato wedges, onion ring, dan 2 saus.</p>
                 <p
                     class="font-[Lato] font-medium text-xl md:text-base lg:text-xl text-grey mb-8 md:mr-10 leading-normal tracking-tight text-center md:text-left">
-                    Surganya para
-                    pencinta ayam!<span><br>Rasakan kepuasan dari setiap gigitan daging pilihan kami yang dipanggang
-                        sempurna, disajikan dengan saus khas dan pelengkap yang menggugah selera.</span></p>
+                    Jangan lewatkan kesempatan untuk menikmati hidangan favorit dengan harga istimewa!</p>
                 <div
                     class="flex-col xs:flex xs:flex-row font-[Lato] text-lg md:text-xs lg:text-base font-semibold grid justify-items-stretch xs:justify-center md:justify-normal xs:w-auto">
                     <a href="#"
-                        class="flex items-center text-white bg-primary py-3 px-6 md:px-5 lg:px-6 rounded-full justify-self-center w-fit">Place
+                        class="flex items-center px-6 py-3 text-white rounded-full bg-primary md:px-5 lg:px-6 justify-self-center w-fit">Place
                         an order<ion-icon name="arrow-forward-outline" class="ml-2"></ion-icon></a>
                     <a href="#"
-                        class="flex items-center justify-self-center italic text-dark ml-0 xs:ml-6 hover:text-primary mt-6 xs:mt-0"><ion-icon
-                            name="play-sharp"
-                            class="bg-white p-4 md:p-3 lg:p-4 rounded-full text-primary mr-2 text-xl md:text-sm"></ion-icon>Check
-                        our video</a>
+                        class="flex items-center mt-6 ml-0 italic justify-self-center text-dark xs:ml-6 hover:text-primary xs:mt-0"><ion-icon
+                            name="share-social-sharp"
+                            class="p-4 mr-2 text-xl bg-white rounded-full md:p-3 lg:p-4 text-primary md:text-sm"></ion-icon>Share promo</a>
                 </div>
             </div>
         </div>
