@@ -554,6 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -574,6 +578,10 @@ video {
   top: 0px;
 }
 
+.z-\[-10\] {
+  z-index: -10;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -586,32 +594,20 @@ video {
   z-index: 30;
 }
 
-.z-\[10\] {
-  z-index: 10;
-}
-
-.z-\[-10\] {
-  z-index: -10;
-}
-
-.z-\[-\] {
-  z-index: -;
-}
-
-.z-\[-30\] {
-  z-index: -30;
-}
-
-.z-0 {
-  z-index: 0;
-}
-
 .-z-10 {
   z-index: -10;
 }
 
 .-z-20 {
   z-index: -20;
+}
+
+.-z-\[-10\] {
+  z-index: 10;
+}
+
+.z-0 {
+  z-index: 0;
 }
 
 .mx-auto {
@@ -796,6 +792,14 @@ video {
 
 .pt-14 {
   padding-top: 3.5rem;
+}
+
+.pt-28 {
+  padding-top: 7rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .text-center {
