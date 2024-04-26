@@ -11,22 +11,22 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <!-- ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script src="https://kit.fontawesome.com/a62f3ccc35.js" crossorigin="anonymous"></script>
     <title>Chikito</title>
 </head>
 
 <body class="bg-background">
 
     <!-- Navbar Section Start -->
-    <header class="bg-white font-[Lato] font-semibold text-base fixed w-full z-20 shadow-sm">
+    <header class="bg-white font-[Lato] font-semibold fixed w-full z-20 shadow-sm">
         <nav class="flex items-center justify-between px-5 py-3 md:px-7 lg:px-20">
             <div class="cursor-pointer">
                 <img class="inline h-9" src="img/Logo Chikito 1.png" alt="logo">
             </div>
             <!-- Navbar Desktop Start -->
             <div class="static hidden md:inline">
-                <ul class="flex items-center gap-7 text-dark">
+                <ul class="flex items-center gap-7 text-dark text-sm lg:text-base">
                     <li>
                         <a class="tracking-tight hover:text-primary" href="#">Home</a>
                     </li>
@@ -48,15 +48,14 @@
             <!-- Navbar Desktop End -->
             <div class="flex items-center gap-5 md:hidden">
                 <button class="px-5 py-2 text-white rounded-full bg-primary">Contact us</button>
-                <ion-icon id="menu" onclick="menuAnimation()" name="menu"
-                    class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                <ion-icon id="menu" onclick="menuAnimation()" name="menu" class="text-3xl cursor-pointer"></ion-icon>
             </div>
         </nav>
     </header>
     <!-- Navbar Mobile Start -->
     <div
-        class="nav-links fixed z-10 md:static md:min-h-fit bg-white min-h-[35vh] left-0 top-[-400px] transition-all ease-in-out duration-500 w-full flex items-center px-8 md:py-0 py-7">
-        <ul class="flex flex-col md:flex-row gap-6 md:mt-0 mt-16 text-dark font-[Lato] font-semibold text-base">
+        class="nav-links fixed z-10 md:static bg-white md:min-h-fit left-0 -top-[400px] transition-all ease-in-out duration-500 w-full flex md:hidden items-center px-8 md:py-0 py-12">
+        <ul class="flex flex-col md:flex-row gap-6 md:mt-0 mt-14 text-dark font-[Lato] font-semibold text-lg">
             <li>
                 <a class="tracking-tight hover:text-primary" href="#home" onclick="menuAnimation()">Home</a>
             </li>
@@ -78,16 +77,21 @@
     <!-- Navbar Section End -->
 
     <!-- Home Section Start -->
-    <section id="home" class="z-0 pt-28 md:pt-16">
-        <div class="flex flex-wrap px-5 md:px-3 lg:px-14">
-            <div class="self-center w-full px-8 mb-5 md:px-8 md:w-1/2">
+    <section id="home" class="relative z-0 pb-14 pt-28 md:pt-16 overflow-hidden">
+        <!-- Background Start -->
+        <div class="absolute w-full h-full md:w-[900px] md:h-[900px] bottom-[10%] md:bottom-[5%] md:left-2/3 bg-primary opacity-10 z-0 rounded-bl-full md:rounded-full"></div>
+        <div class="absolute w-full h-full md:w-[900px] md:h-[900px] bottom-[10%] md:bottom-[5%] md:left-2/3 bg-primary opacity-10 z-0 rounded-bl-full md:rounded-full"></div>
+        <!-- Background End -->
+        <div class="flex flex-wrap px-5 md:px-3 lg:px-14 z-10">
+            <div class="self-center w-full px-8 mb-5 md:px-8 md:w-1/2 z-10">
                 <!-- Social Media Start -->
-                <div class="flex items-center justify-center h-20 py-2 text-xl text-dark md:justify-start">
-                    <a href="https://www.instagram.com/chikito.id/" target="_blank"
-                        class="h-6 px-3 fa-brands fa-instagram hover:text-primary"></a>
-                    <a href="#" class="h-6 px-3 fa-brands fa-facebook-f hover:text-primary"></a>
-                    <a href="#" class="h-6 px-3 fa-brands fa-twitter hover:text-primary"></a>
-                    <a href="#" class="h-6 px-3 fa-brands fa-tiktok hover:text-primary"></a>
+                <div
+                    class="relative flex items-center justify-center h-20 md:pl-11 text-3xl md:text-lg lg:text-2xl text-dark md:justify-start">
+                    <img class="absolute hidden md:inline -left-10 lg:-left-20 h-2 lg:h-3" src="img/Line 1.png" alt="">
+                    <a href="#" class="h-6 px-2 bx bxl-instagram hover:text-primary pt-0 md:pt-1 lg:pt-0"></a>
+                    <a href="#" class="h-6 px-2 bx bxl-facebook hover:text-primary pt-0 md:pt-1 lg:pt-0"></a>
+                    <a href="#" class="h-6 px-2 bx bxl-twitter hover:text-primary pt-0 md:pt-1 lg:pt-0"></a>
+                    <a href="#" class="h-6 px-2 bx bxl-tiktok hover:text-primary pt-0 md:pt-1 lg:pt-0"></a>
                 </div>
                 <!-- Social Media End -->
                 <h1
@@ -110,7 +114,7 @@
                         our video</a>
                 </div>
             </div>
-            <div class="self-end w-full md:w-1/2">
+            <div class="self-end w-full md:w-1/2 z-10">
                 <div class="px-8 mt-5 lg:mt-8 md:px-5">
                     <img src="img/menu 1.png" alt="menu1" class="max-w-full mx-auto">
                 </div>
